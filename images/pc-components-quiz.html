@@ -35,6 +35,36 @@
     -->
     <h3>Quiz</h3>
 
-    <form></form>
+    <form name="pc-components-quiz" id="components-quiz" method="get">
+      <fieldset>
+        <legend>Contact information</legend>
+
+        <label for="full-name">Full name (ex. John Smith) [required]</label>
+        <input type="text" id="full-name" name="full-name" required />
+        <br />
+        <br />
+
+        <label for="email-addr"
+          >Email adress (ex. johnsmith@domain.com) [required]
+        </label>
+        <input type="email" id="email-addr" name="email-addr" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Safety</legend>
+
+        <label for="esd-question"
+          >What are the 4 ways to protect against ESD
+        </label>
+        <input type="text" id="esd-question" name="esd-question" />
+        <br />
+        <br />
+        <label for="fire-safety-question"
+          >What is the acronym for using a fire extinguisher
+        </label>
+        <input type="text" id="fire-safety-question" name="fire-question" />
+      </fieldset>
+      <input type="submit" />
+    </form>
   </body>
 </html>

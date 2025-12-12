@@ -36,11 +36,16 @@
     <h3>Quiz</h3>
 
     <form name="pc-components-quiz" id="components-quiz" method="get">
-      <fieldset>
+      <fieldset for="components-quiz">
         <legend>Contact information</legend>
 
-        <label for="full-name">Full name (ex. John Smith) [required]</label>
-        <input type="text" id="full-name" name="full-name" required />
+        <label for="first-name">First name (ex. John) [required]</label>
+        <input type="text" id="first-name" name="first-name" required />
+        <br />
+        <br />
+
+        <label for="last-name">Last name (ex. Smith) [required]</label>
+        <input type="text" id="last-name" name="last-name" required />
         <br />
         <br />
 
@@ -50,7 +55,7 @@
         <input type="email" id="email-addr" name="email-addr" required />
       </fieldset>
 
-      <fieldset>
+      <fieldset for="components-quiz">
         <legend>Safety</legend>
 
         <label for="esd-question"
@@ -64,7 +69,32 @@
         </label>
         <input type="text" id="fire-safety-question" name="fire-question" />
       </fieldset>
-      <input type="submit" />
+      <fieldset for="components-quiz">
+        <legend>Cases</legend>
+
+        <label for="form-factors-question">
+          Name 2 main form factors for PC cases
+        </label>
+        <input
+          type="text"
+          id="form-factors-question"
+          name="form-factors-question" />
+        <br />
+        <br />
+
+        <label for="all-in-one-question">
+          Describe the all in one PC case form factor
+        </label>
+        <textarea id="all-in-one-question" name="all-in-one-question">
+        </textarea>
+      </fieldset>
+      <fieldset for="components-quiz">
+        <legend>Cooling</legend>
+      </fieldset>
+      <fieldset for="components-quiz">
+        <legend>Power Supplies</legend>
+      </fieldset>
+      <input type="submit" value="Submit Quiz" />
     </form>
   </body>
 </html>
